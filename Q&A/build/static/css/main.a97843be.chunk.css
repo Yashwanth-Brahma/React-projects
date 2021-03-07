@@ -1,0 +1,2 @@
+body{display:flex;justify-content:center;text-align:center;background-color:#420366}h1{text-align:left;padding:2rem;height:100%}h3{display:flex;justify-content:space-between}.card{border:.5px solid #8b8c89;margin-bottom:1rem;margin-top:1rem;padding:0 1rem;width:32vw;text-align:left}@supports (display:flex){@media screen and (max-width:900px){.container{display:flex;flex-direction:column}}}.container{display:flex;justify-content:space-between;margin:5rem;background-color:#f0f8ff;padding:2rem}
+/*# sourceMappingURL=main.a97843be.chunk.css.map */
