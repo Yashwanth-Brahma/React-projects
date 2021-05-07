@@ -1,0 +1,309 @@
+body {
+  background-color: #d8e2dc;
+  margin: 0;
+}
+
+/* search form*/
+
+.ser {
+  display: flex;
+  justify-content: center;
+}
+.searchForm {
+  margin: 8rem 0 3rem 0;
+  background-color: white;
+  padding: 2rem;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchForm label {
+  color: #2d6a4f;
+  font-family: "Courier New", Courier, monospace;
+  word-spacing: 2px;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.search {
+  border: none;
+  background-color: #dfe2e2;
+  border-radius: 4px;
+  width: auto;
+  outline: none;
+  padding: 0.3rem;
+}
+.search:focus {
+  border: 2px solid #000;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 5px 20px #3c6e71;
+  padding-top: 1rem;
+}
+
+.nav1 {
+  padding-top: 0.7rem;
+}
+.nav2 ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+.nav2 ul li {
+  color: #83c5be;
+  text-decoration: none;
+}
+
+.nav2 ul li:hover {
+  color: #2d6a4f;
+}
+
+.home:hover {
+  text-decoration: none;
+}
+.home {
+  text-decoration: none;
+}
+
+/* cocktailList */
+
+.cocktailList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cocktailList h2 {
+  margin-bottom: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.cocktailList ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cocktailList ul li img {
+  width: 320px;
+  height: 365px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.cocktailList ul li {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px #3c6e71;
+  width: 320px;
+  margin: 2rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.cocktailList ul li div {
+  margin: 1rem;
+}
+.cocktailList ul li h3 {
+  font-size: 25px;
+  color: #2d6a4f;
+  margin: 0;
+  margin-bottom: 0.4rem;
+}
+
+.glass {
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.alco {
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+
+.cocktailList ul li button,
+.error button {
+  background-color: #2d6a4f;
+  color: white;
+  padding: 0.5rem;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  border-radius: 4px;
+}
+.cocktailList ul li button:hover,
+.error button:hover {
+  background-color: #90be6d;
+  transition-duration: 500ms;
+}
+.cocktailList ul li:hover {
+  box-shadow: 7px 7px 5px #3c6e71;
+  transition-duration: 400ms;
+}
+@media screen and (max-width: 850px) {
+  .cocktailList ul li img {
+    width: 500px;
+    height: 380px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  .cocktailList ul li {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #3c6e71;
+    width: 500px;
+    margin: 2rem;
+  }
+
+  .navbar {
+    position: relative;
+  }
+}
+
+/* about */
+
+.about {
+  position: absolute;
+  margin-top: 8rem;
+  text-align: center;
+  width: 50vw;
+  margin: 10% 25%;
+}
+
+.about h1 {
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.about p {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+/* cocktail */
+
+.cocktail {
+  position: absolute;
+  margin: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cocktail h1 {
+  width: 100vw;
+}
+
+.imgSection,
+.imgSection img {
+  width: 445px;
+  height: 445px;
+  margin-right: 2rem;
+}
+
+.infoSection {
+  width: 445px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.var {
+  background-color: #7dd3ac;
+  color: #2d6a4f;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+.error {
+  position: absolute;
+  margin: 10rem;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: transparent;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #2d6a4f;
+  text-indent: -9999em;
+  margin: 88px auto;
+  margin-top: 20rem;
+  position: relative;
+  font-size: 3rem;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
